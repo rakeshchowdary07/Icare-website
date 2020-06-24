@@ -1,0 +1,234 @@
+:root {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+.container-fluid {
+    background-color:#bbe5eb;
+    padding-bottom: 0;
+}
+
+#myNavbar, #myfooter {
+    background-color: #01375d;
+    color: #C7DDEE;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #C7DDEE;
+}
+
+#nav-title{
+    padding: 0 20px;
+    color:gray;
+}
+
+/* Overwrite default navbar toggle range*/
+@media (min-width: 1044px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    }
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+h2 {
+	color: #4477B5;
+	font-family: "Source Sans Pro", "Arial", serif;
+	font-weight: normal; }
+
+h6 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.main-content{
+    width: 80%;
+    margin: 0 auto; 
+    padding: 30px 0 50px 0;
+}
+
+.homepage-row {
+    margin-top: 60px;
+    
+}
+
+#mySlider .carousel-inner{
+    max-height: 600px;
+}
+
+.footer{
+    padding-top: 20px;
+}
+.verticalLine {
+border-left: thin solid #000000;
+    padding-left: 5px;
+}
+   
+/* Dashboards */
+.card-img-top {
+    width: 75%;
+    margin: 10px auto 0 auto;
+}
+.card {
+    background-color: #78c7ff ;
+}
+.card-container {
+    margin: 20px auto;
+    border: 1px solid #01375d;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    padding: 16px;
+}
+.carousel-control-prev, .carousel-control-next {
+    height:50%;
+    margin:auto;
+}
+@media (min-width: 768px) {
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+      display: block;
+    }
+  
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+      transition: none;
+    }
+  
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+  
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -33.3333%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      -webkit-transform: translate3d(-100%, 0, 0);
+              transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      -webkit-transform: translate3d(100%, 0, 0);
+              transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+    }
+  }
+
+/* About US Page */
+
+.maps-iframe{
+    margin: 20px auto;
+}
+
+/* Contact US Page */
+
+#contact-form{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Patient Registration Page */
+
+.form ul {
+    list-style: none;
+}
+
+/* Doctor Registration Page */
+#doctor-details-registration{
+    padding:20px;
+}
+
+#doctor-details-registration .input-group, #create-doctor-form .input-group, 
+#user-account .input-group , #create-room-form .input-group, 
+#patient-details .input-group, #registration .input-group,
+#modify-room-form .input-group, #create-guardian-form .input-group,
+#patient-details .input-group{
+    margin: 6px auto;
+}
+
+
+/* Blog sidebar */ 
+.sidebar-header {
+	font-size:1.4em;
+	border-bottom:3px solid #398ddb;
+	padding:10px 0 10px 2px;
+	opacity:0.8;
+}
+
+
+
+    .done {
+        font-family:"Droid Sans", "Arial", sans-serif;
+        margin:20px auto; 
+        display:none;
+        line-height:23px;
+        color:#5D5D5D;
+        font-size:1.2em;
+    }
+
+#contact-method {
+	color:#8a8a8a;
+	margin-bottom:25px;
+}
+
+#contact-method li {
+	border-bottom:1px dotted #e0e0e0;
+	padding-bottom:4px;
+}
+#contact-skype {
+	background:url(../images/contact-method-skype.png) no-repeat 0px 0px;
+	padding-left:23px;
+}
+
+#contact-email {
+	background:url(../images/contact-method-mail.png) no-repeat 0px 1px;
+	padding-left:23px;
+}
+
+#contact-telephone {
+	background:url(../images/contact-method-telephone.png) no-repeat 0px -1px;
+	padding-left:23px;
+}
+#contact-skype {
+	background:url(../images/contact-method-skype.png) no-repeat 0px 0px;
+	padding-left:23px;
+}
+
