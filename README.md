@@ -16,7 +16,6 @@ Please install the software given above to ensure the website will run properly.
 3. Place file in your htdocs folder of the local server you are running on your system (XAMP, WAMP, etc.)
 	- htdocs folder will be located inside the folder you installed the local server
 	- e.g. C:/XAMPP/htdocs
-4. 
   a) Start your local servers and go to localhost/phpmyadmin
   	e.g. Begin Apache and MySQL servers in XAMPP by clicking on the 'Start' button 
 	
